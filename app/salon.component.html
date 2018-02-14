@@ -4,9 +4,9 @@
 
   <div class="row align-items-center">
     <div class="col-2">
-      <ul class="list-group">
-        <li class="list-group-item active" *ngFor="let s of listeSalon()">{{s.nom}}</li>
-      </ul>
+      <div class="list-group">
+        <a [routerLink]="['/salon/:id']" class="list-group-item" *ngFor="let s of listeSalon()">{{s.nom}}</a>
+      </div>
     </div>
 
     <div class="col-1">
