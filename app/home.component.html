@@ -1,2 +1,12 @@
 <h1>Bienvenue sur cette page</h1>
 <p>Vous allez pouvoir écrire des choses dans ce chat, Woaw!</p>
+
+<div class="container">
+
+    <div class="form-group">
+        <label>Pseudo</label>
+        <input [(ngModel)]="username" />
+        <button class="btn btn-success" (click)="connect(username)">Se connecter</button>
+        <br/>
+    </div>
+</div>
