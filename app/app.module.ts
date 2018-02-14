@@ -1,16 +1,17 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
-import {Routes, RouterModule } from '@angular/router';
+import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home.component';
 import { SalonComponent } from './salon.component';
 import { SalonDetailComponent } from './salon-detail.component';
+import { AppConfigService} from '/app-config.service';
 
-const routes:Routes = [
-  { path: 'home', component: HomeComponent },
-  { path: '', redirectTo: 'home', pathMatch: 'full' },
-  { path: 'salon', component:SalonComponent },
-  { path: 'salon/:id', component:SalonDetailComponent }
+const routes: Routes = [
+    { path: 'home', component: HomeComponent },
+    { path: '', redirectTo: 'home', pathMatch: 'full' },
+    { path: 'salon', component: SalonComponent },
+    { path: 'salon/:id', component: SalonDetailComponent }
 ]
 
 @NgModule({
@@ -19,6 +20,8 @@ const routes:Routes = [
         RouterModule.forRoot(routes),
     ],
 
+    providers: [AppConfigService],
+
     declarations: [
         AppComponent,
         HomeComponent,
@@ -26,6 +29,6 @@ const routes:Routes = [
         SalonDetailComponent
     ],
 
-    bootstrap: [ AppComponent ]
+    bootstrap: [AppComponent]
 })
 export class AppModule { }
