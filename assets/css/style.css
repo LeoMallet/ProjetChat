@@ -11,3 +11,13 @@ p {
         padding: 15px;
         margin: 0 auto;
 }
+
+.button{
+        padding: 0px;
+        height: 27px;
+        margin: 0 auto;
+        align-content: center;
+        width: 100px;
+        top: -1px;
+        position: relative;
+}
