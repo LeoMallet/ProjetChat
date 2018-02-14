@@ -2,6 +2,9 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import {Routes, RouterModule } from '@angular/router';
+import { HomeComponent } from './home.component';
+import { SalonComponent } from './salon.component';
+import { SalonDetailComponent } from './salon-detail.component';
 
 const routes:Routes = [
   { path: 'home', component: HomeComponent },
