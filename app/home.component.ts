@@ -1,8 +1,8 @@
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Component, HostListener, Input } from '@angular/core';
 import { Http } from '@angular/http';
 import { HomeService } from './home.service';
-import
+
 
 @Component({
     templateUrl: 'app/home.component.html',
@@ -10,12 +10,13 @@ import
 })
 export class HomeComponent {
 
-    private username:string;
+    private username:string = "azert";
 
-    constructor(private service: HomeService) {
+    constructor(private service: HomeService, private router: Router) {
     }
 
-    connect(username: string){
-        this.service.connection(username);
+    connect(){
+        this.service.connection(this.username);
+        this.router.navigate([ '/salon' ]);
     }
 }

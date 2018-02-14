@@ -1,8 +1,4 @@
 {
-
-
-
-    
     "compilerOptions": {
         "outDir": "dist",
         "target": "es5",
@@ -18,7 +14,5 @@
         "noImplicitAny": false,
         "suppressImplicitAnyIndexErrors": true,
         "removeComments": false
-        "experimentalDecorators": true,
-        "allowJs": true
     }
 }
