@@ -1,4 +1,8 @@
 {
+
+
+
+    
     "compilerOptions": {
         "outDir": "dist",
         "target": "es5",
@@ -7,9 +11,14 @@
         "sourceMap": true,
         "emitDecoratorMetadata": true,
         "experimentalDecorators": true,
-        "lib": [ "es2017", "dom" ],
+        "lib": [
+            "es2017",
+            "dom"
+        ],
         "noImplicitAny": false,
         "suppressImplicitAnyIndexErrors": true,
         "removeComments": false
+        "experimentalDecorators": true,
+        "allowJs": true
     }
 }
