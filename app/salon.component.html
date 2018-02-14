@@ -5,7 +5,7 @@
   <div class="row align-items-center">
     <div class="col-2">
       <div class="list-group">
-        <a [routerLink]="['/salon/:id']" class="list-group-item" *ngFor="let s of listeSalon()">{{s.nom}}</a>
+        <a [routerLink]="'/salon/' + s.id" class="list-group-item" *ngFor="let s of listeSalon()">{{s.nom}}</a>
       </div>
     </div>
 
@@ -13,7 +13,7 @@
     </div>
 
     <div class="col-8">
-      <p class="bg-danger text-white">Ici le fil de discussion des salons</p>
+      <p class="zoneMessage">Ici le fil de discussion des salons</p>
       <input class="col-8" placeholder="Saisir ici votre message"/>
       <button class="btn btn-success btn-lg">OK</button>
     </div>
