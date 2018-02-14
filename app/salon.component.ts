@@ -9,10 +9,13 @@ import { Salon } from './salon';
   providers : [SalonService]
 })
 export class SalonComponent {
-  private salons:Array<Salon> = this.service.liste();
+  private salons:Array<Salon>;
 
   constructor(private service:SalonService, private router:Router) {
+  }
 
+  listeSalon(){
+    return this.service.liste();
   }
 
 }
