@@ -1,12 +1,13 @@
-<h1>Bienvenue sur cette page</h1>
-<p>Vous allez pouvoir écrire des choses dans ce chat, Woaw!</p>
+
 
 <div class="container">
-
+    <form class="form-signin">
+        <h2 class="form-signin-heading">Identifiez-vous!</h2>
     <div class="form-group">
-        <label>Pseudo</label>
-        <input [(ngModel)]="username" />
-        <button class="btn btn-success" (click)="connect()">Se connecter</button>
+        <label></label>
+        <input  class="form-control" placeholder="Pseudo" [(ngModel)]="username" required/>
+        <button  class="btn btn-lg btn-primary btn-block" (click)="connect()">Se connecter</button>
         <br/>
     </div>
+    </form>
 </div>
