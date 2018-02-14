@@ -10,7 +10,7 @@ import { HomeService } from './home.service';
 })
 export class HomeComponent {
 
-    private username:string = "azert";
+    private username:string;
 
     constructor(private service: HomeService, private router: Router) {
     }
