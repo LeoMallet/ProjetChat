@@ -11,12 +11,12 @@ export class SalonService {
     private messages:Array<Message>;
     private idSalon:number;
 
-    constructor(private appConfig:AppConfigService,private http:Http){}
+    constructor(private appConfig: AppConfigService, private http: Http) { }
 
-    liste(){
-      if(this.salons == null){
-          this.http.get(this.appConfig.uri + '/canal').subscribe(resp => this.salons = resp.json());
-          return new Array<Salon>();
+    liste() {
+        if (this.salons == null) {
+            this.http.get(this.appConfig.uri + '/canal').subscribe(resp => this.salons = resp.json());
+            return new Array<Salon>();
         }
         else return this.salons;
     }
