@@ -1,31 +1,33 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Application eshop Angular</title>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" />
-        <base href="/" />
-    </head>
+
+<head>
+    <title>Application eshop Angular</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" />
+    <base href="/" />
+</head>
 
 
-    <body>
-        <eshop-app>Chargement de l'application Angular ...</eshop-app>
+<body>
+    <eshop-app>Chargement de l'application Angular ...</eshop-app>
 
-        <!-- Chargement des librairies -->
-        <script src="node_modules/core-js/client/shim.min.js"></script>
-        <script src="node_modules/zone.js/dist/zone.js"></script>
-        <script src="node_modules/systemjs/dist/system.src.js"></script>
+    <!-- Chargement des librairies -->
+    <script src="node_modules/core-js/client/shim.min.js"></script>
+    <script src="node_modules/zone.js/dist/zone.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
 
-        <!-- Configuration SystemJS -->
-        <script src="systemjs.config.js"></script>
-        <script>
-            System.import('app').catch(err => console.error(err));
-        </script>
+    <!-- Configuration SystemJS -->
+    <script src="systemjs.config.js"></script>
+    <script>
+        System.import('app').catch(err => console.error(err));
+    </script>
 
-        <!--Boostrap-->
-       <script src="assets/js/jquery-3.3.1.js"></script>
-       <script src="assets/js/popper.min.js"></script>
-       <script src="assets/js/bootstrap.min.js"></script>
-    </body>
+    <!--Boostrap-->
+    <script src="assets/js/jquery-3.3.1.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+</body>
+
 </html>
