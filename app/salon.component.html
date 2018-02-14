@@ -1,1 +1,21 @@
-<h1>Les salons de chat</h1>
+<h1>Les salons de conversation</h1>
+
+<div class="container-fluid">
+
+  <div class="row align-items-center">
+    <div class="col-2">
+      <ul class="list-group">
+        <li class="list-group-item active" *ngFor="let s of salons">{{s.nom}}</li>
+      </ul>
+    </div>
+
+    <div class="col-1">
+    </div>
+
+    <div class="col-8">
+      <p class="bg-danger text-white">Ici le fil de discussion des salons</p>
+      <input class="col-8" placeholder="Saisir ici votre message"/>
+      <button class="btn btn-success btn-lg">OK</button>
+    </div>
+
+</div>

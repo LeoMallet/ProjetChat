@@ -9,8 +9,6 @@ export class HomeService {
     constructor(private appConfig: AppConfigService, private http: Http) { }
 
     connection(nom_utilisateur: string) {
-        this.http
-            .post(this.appConfig.uri + '/auth', { username: nom_utilisateur })
-            .subscribe(resp => this.token = resp.json());
+       return  this.http.get(this.appConfig.uri + '/canal').subscribe(resp => this.token = resp.json());
     }
 }
