@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
+import {Routes, RouterModule } from '@angular/router';
 
 const routes:Routes = [
   { path: 'home', component: HomeComponent },
@@ -11,11 +12,15 @@ const routes:Routes = [
 
 @NgModule({
     imports: [
-        BrowserModule
+        BrowserModule,
+        RouterModule.forRoot(routes),
     ],
 
     declarations: [
-        AppComponent
+        AppComponent,
+        HomeComponent,
+        SalonComponent,
+        SalonDetailComponent
     ],
 
     bootstrap: [ AppComponent ]
