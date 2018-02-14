@@ -5,7 +5,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home.component';
 import { SalonComponent } from './salon.component';
 import { SalonDetailComponent } from './salon-detail.component';
-import { AppConfigService} from '/app-config.service';
+import { AppConfigService} from './app-config.service';
 
 const routes: Routes = [
     { path: 'home', component: HomeComponent },
