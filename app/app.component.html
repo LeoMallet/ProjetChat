@@ -1,14 +1,27 @@
-<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
-    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
+<!--<nav class="navbar navbar-dark bg-dark">
+
     <a class="navbar-brand" href="#">Chat!</a>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav-rig">
-            <a [routerLink]="['/home']" routerLinkActive="active">Home</a>
-            <a [routerLink]="['/salon']" routerLinkActive="active">Salon</a>
+        <div class="navbar-nav"></div>
+        <a [routerLink]="['/home']" routerLinkActive="active">Home</a>
+        <a [routerLink]="['/salon']" routerLinkActive="active">Salon</a>
+    </div>
+
+</nav>-->
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">CHAT!</a>
         </div>
+        <ul class="nav">
+            <li class="nav-item">
+                <a [routerLink]="['/home']" routerLinkActive="active">Home</a>
+            </li>
+            <li class="nav-item">
+            <a [routerLink]="['/salon']" routerLinkActive="active">Salon</a>
+            </li>
+    </ul>
     </div>
 </nav>
 
