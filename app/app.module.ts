@@ -1,7 +1,10 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
-import { Routes, RouterModule } from '@angular/router';
+import { NgModule } from '@angular/core';
+import {Routes, RouterModule } from '@angular/router';
+import {FormsModule} from '@angular/forms'; // lier les inputs dans les components
+import { HttpModule } from '@angular/http'; //Pour inserer les uri
+import { BrowserModule } from '@angular/platform-browser'; //NgIf
+
 import { HomeComponent } from './home.component';
 import { SalonComponent } from './salon.component';
 import { SalonDetailComponent } from './salon-detail.component';
@@ -18,6 +21,8 @@ const routes: Routes = [
     imports: [
         BrowserModule,
         RouterModule.forRoot(routes),
+        FormsModule,
+        HttpModule
     ],
 
     providers: [AppConfigService],
