@@ -1,11 +1,11 @@
 
 
 <div class="container">
-    <form class="form-signin">
+    <form class="form-signin login">
         <h2 class="form-signin-heading">Identifiez-vous!</h2>
     <div class="form-group">
         <label></label>
-        <input  class="form-control" placeholder="Pseudo" [(ngModel)]="username" required/>
+        <input  class="form-control" placeholder="Pseudo" name="UserForm" [(ngModel)]="username" required/>
         <button  class="btn btn-lg btn-primary btn-block" (click)="connect()">Se connecter</button>
         <br/>
     </div>
